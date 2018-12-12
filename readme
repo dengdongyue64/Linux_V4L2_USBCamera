@@ -1,0 +1,8 @@
+RK 1108 huanjing
+RK_SYSTEM_DIR=/home/steve/work/rv1108_cvr_v1.4_20180604/out/system
+TOOLSCHAIN_DIR=/home/steve/work/rv1108_cvr_v1.4_20180604/prebuilts/toolschain/
+
+export SYSROOT_PATH=$RK_SYSTEM_DIR
+export TOOLSCHAIN_PATH=$TOOLSCHAIN_DIR
+
+cmake . -DCMAKE_TOOLCHAIN_FILE=/home/steve/work/linphone_android_newip/linphone-android/submodules/cmake-builder/toolchains/toolchain-rv1108.cmake
